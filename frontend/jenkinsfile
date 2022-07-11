@@ -22,11 +22,9 @@ pipeline {
       }
     }
 
-    stage('test') {
+    stage('mensaje') {
       steps {
-        dir('frontend') {
-          sh 'npm run test'
-        }
+        echo '"mensaje para probar las pipelines"'
       }
     }
 
